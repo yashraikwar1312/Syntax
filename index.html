@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Raikwar - Content Writer & Photographer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">Yash Raikwar</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showHome()">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="showHome()" style="display: none;">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Yash Raikwar</h1>
+                <p class="subtitle">Content Writer & Certified Photographer from IIIT Kota</p>
+                <a href="#contact" class="cta-button">Let's Work Together</a>
+            </div>
+            
+            <!-- Camera Animation -->
+            <div class="camera-container">
+                <div class="camera">
+                    <div class="camera-lens"></div>
+                    <div class="camera-flash"></div>
+                    <div class="camera-click"></div>
+                </div>
+            </div>
+            
+            <!-- Floating Particles -->
+            <div class="particle" style="top: 20%; left: 10%; width: 10px; height: 10px; animation-delay: 0s;"></div>
+            <div class="particle" style="top: 60%; left: 80%; width: 15px; height: 15px; animation-delay: 2s;"></div>
+            <div class="particle" style="top: 80%; left: 20%; width: 8px; height: 8px; animation-delay: 4s;"></div>
+            <div class="particle" style="top: 30%; left: 70%; width: 12px; height: 12px; animation-delay: 1s;"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Creative Content Writer & Visual Storyteller</h3>
+                        <p>I'm a passionate content writer and certified photographer from IIIT Kota, specializing in creating compelling narratives that drive engagement and results. With expertise in machine learning, artificial intelligence, and deep learning content, I bridge the gap between complex technical concepts and accessible storytelling.</p>
+                        <p>My unique blend of technical knowledge and creative writing skills allows me to create content that not only informs but also inspires and converts. Whether it's blog posts, technical documentation, or marketing copy, I craft each piece with precision and purpose.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Professional Content Writer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Writing Services -->
+        <section id="services" class="section content-writing">
+            <div class="container">
+                <h2 class="section-title">Content Writing Services</h2>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h3>Blog Writing</h3>
+                        <p>Engaging, SEO-optimized blog posts that drive traffic and establish thought leadership in your industry.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Technical Content</h3>
+                        <p>Complex technical concepts made accessible through clear, comprehensive documentation and articles.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Marketing Copy</h3>
+                        <p>Persuasive copy that converts visitors into customers through strategic messaging and compelling calls-to-action.</p>
+                    </div>
+                </div>
+
+                <h3 style="text-align: center; margin: 3rem 0 2rem; font-family: 'Playfair Display', serif;">How I Help You Get Clients</h3>
+                
+                <div class="flowchart">
+                    <div class="flow-step">
+                        <div class="flow-number">1</div>
+                        <h4>Strategy</h4>
+                        <p>Content audit and strategy development tailored to your target audience</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">2</div>
+                        <h4>Creation</h4>
+                        <p>High-quality, original content that showcases your expertise and builds trust</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">3</div>
+                        <h4>Optimization</h4>
+                        <p>SEO optimization and performance tracking to maximize visibility and engagement</p>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="flow-number">4</div>
+                        <h4>Results</h4>
+                        <p>Increased traffic, leads, and conversions that grow your business</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="blog-grid">
+                    <article class="blog-card" onclick="showBlogDetail('ml-content')">
+                        <div class="blog-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">The Future of Machine Learning in Content Creation</h3>
+                            <p class="blog-excerpt">From image recognition to natural language processing, deep learning is transforming how businesses operate. Explore real-world applications and implementation strategies.</p>
+                            <div class="blog-meta">Published 3 days ago | 6 min read</div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="showBlogDetail('content-writing')">
+                        <div class="blog-image">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Mastering Content Writing: A Complete Guide</h3>
+                            <p class="blog-excerpt">Essential strategies for creating compelling content that engages audiences and drives conversions. From research to publication, master every step of the content writing process.</p>
+                            <div class="blog-meta">Published 5 days ago | 8 min read</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Create Something Amazing Together</h3>
+                        <p>Ready to elevate your content strategy? I'm here to help you create compelling content that drives results and builds meaningful connections with your audience.</p>
+                        
+                        <div style="margin: 2rem 0;">
+                            <p><i class="fas fa-envelope" style="margin-right: 1rem; color: #667eea;"></i>yashraikwar132005@gmail.com</p>
+                            <p><i class="fas fa-graduation-cap" style="margin-right: 1rem; color: #667eea;"></i>Certified Photographer, IIIT Kota</p>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/yash-raikwar-7504632a2" class="social-link linkedin" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/yashraikwar2005" class="social-link twitter" target="_blank">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/justur.yash" class="social-link instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submit-btn">
+                            <div class="btn-content">
+                                <span id="btn-text">Send Message</span>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Blog Detail Pages -->
+    <div class="blog-detail" id="ml-content">
+        <div class="container">
+            <div class="blog-header">
+                <h1 class="blog-detail-title">The Future of Machine Learning in Content Creation</h1>
+                <div class="blog-detail-meta">Published 2 weeks ago | 5 min read | By Yash Raikwar</div>
+            </div>
+            <div class="blog-detail-content">
+                <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" alt="Machine Learning and AI" class="blog-detail-image">
+                
+                <p>Machine learning is revolutionizing the content creation landscape, offering unprecedented opportunities for personalization, automation, and optimization. As we advance into 2025, the integration of AI-powered tools in content workflows has become not just beneficial, but essential for staying competitive.</p>
+
+                <h3>The Current State of AI in Content Creation</h3>
+                <p>Today's content creators have access to sophisticated AI tools that can generate text, optimize headlines, suggest topics, and even create visual content. These technologies are not replacing human creativity but augmenting it, allowing writers and marketers to focus on strategy and storytelling while AI handles repetitive tasks.</p>
+
+                <p>Key areas where machine learning is making an impact include:</p>
+                <ul>
+                    <li>Automated content generation for product descriptions and data-driven articles</li>
+                    <li>Personalized content recommendations based on user behavior and preferences</li>
+                    <li>SEO optimization through intelligent keyword research and content analysis</li>
+                    <li>Real-time content performance prediction and optimization</li>
+                    <li>Multilingual content creation and translation</li>
+                </ul>
+
+                <h3>Practical Applications for Content Writers</h3>
+                <p>As a content writer specializing in technical topics, I've witnessed firsthand how machine learning tools can enhance productivity and quality. Tools like GPT-based writing assistants, content optimization platforms, and AI-powered research tools have transformed how we approach content creation.</p>
+
+                <p>The key is understanding that AI is a collaborator, not a replacement. The most successful content strategies combine machine efficiency with human insight, creativity, and emotional intelligence.</p>
+
+                <h3>Looking Ahead: What's Next?</h3>
+                <p>The future promises even more sophisticated AI integration, including real-time content adaptation, advanced sentiment analysis, and AI-powered content strategy development. Content creators who embrace these technologies while maintaining their unique voice and perspective will lead the industry forward.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-detail" id="ai-marketing">
+        <div class="container">
+            <div class="blog-header">
+                <h1 class="blog-detail-title">Artificial Intelligence: Transforming Digital Marketing</h1>
+                <div class="blog-detail-meta">Published 1 week ago | 7 min read | By Yash Raikwar</div>
+            </div>
+            <div class="blog-detail-content">
+                <img src="https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg" alt="AI in Digital Marketing" class="blog-detail-image">
+                
+                <p>Artificial Intelligence has become the driving force behind modern digital marketing strategies, enabling businesses to create more personalized, efficient, and effective campaigns. From predictive analytics to automated customer service, AI is reshaping how we connect with audiences and drive conversions.</p>
+
+                <h3>AI-Powered Marketing Tools</h3>
+                <p>The marketing technology landscape has exploded with AI-powered solutions that help businesses understand their customers better and deliver more targeted experiences. These tools analyze vast amounts of data to identify patterns, predict behavior, and optimize campaigns in real-time.</p>
+
+                <ul>
+                    <li>Predictive analytics for customer lifetime value and churn prediction</li>
+                    <li>Chatbots and virtual assistants for customer support</li>
+                    <li>Dynamic pricing algorithms based on market conditions</li>
+                    <li>Automated email marketing with personalized content</li>
+                    <li>Social media sentiment analysis and trend prediction</li>
+                </ul>
+
+                <h3>The Impact on Content Strategy</h3>
+                <p>AI is fundamentally changing how we approach content strategy. Machine learning algorithms can analyze audience preferences, identify trending topics, and even suggest content formats that are most likely to engage specific segments of your audience.</p>
+
+                <p>This data-driven approach to content creation ensures that every piece of content serves a strategic purpose and contributes to measurable business outcomes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-detail" id="deep-learning">
+        <div class="container">
+            <div class="blog-header">
+                <h1 class="blog-detail-title">Deep Learning Applications in Modern Business</h1>
+                <div class="blog-detail-meta">Published 3 days ago | 6 min read | By Yash Raikwar</div>
+            </div>
+            <div class="blog-detail-content">
+                <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg" alt="Deep Learning Neural Networks" class="blog-detail-image">
+                
+                <p>Deep learning, a subset of machine learning inspired by the human brain's neural networks, is transforming industries across the globe. From healthcare to finance, businesses are leveraging deep learning to solve complex problems and create innovative solutions.</p>
+
+                <h3>Understanding Deep Learning</h3>
+                <p>Deep learning uses artificial neural networks with multiple layers to progressively extract higher-level features from raw input. This approach has proven particularly effective for tasks involving pattern recognition, natural language processing, and decision-making.</p>
+
+                <h3>Real-World Business Applications</h3>
+                <p>Companies across various sectors are implementing deep learning solutions to gain competitive advantages:</p>
+                <ul>
+                    <li>Computer vision for quality control in manufacturing</li>
+                    <li>Natural language processing for customer service automation</li>
+                    <li>Fraud detection in financial services</li>
+                    <li>Recommendation systems for e-commerce platforms</li>
+                    <li>Predictive maintenance in industrial equipment</li>
+                </ul>
+
+                <p>The key to successful deep learning implementation lies in having quality data, clear objectives, and the right technical expertise to design and train effective models.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-detail" id="content-writing">
+        <div class="container">
+            <div class="blog-header">
+                <h1 class="blog-detail-title">Mastering Content Writing: A Complete Guide</h1>
+                <div class="blog-detail-meta">Published 5 days ago | 8 min read | By Yash Raikwar</div>
+            </div>
+            <div class="blog-detail-content">
+                <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg" alt="Content Writing Process" class="blog-detail-image">
+                
+                <p>Content writing is both an art and a science, requiring creativity, strategic thinking, and technical skill. Whether you're writing blog posts, marketing copy, or technical documentation, mastering the fundamentals of content writing is essential for success in today's digital landscape.</p>
+
+                <h3>The Content Writing Process</h3>
+                <div class="flowchart-container">
+                    <p>Effective content writing follows a structured process that ensures quality and results:</p>
+                    <ol>
+                        <li><strong>Research:</strong> Understanding your audience, topic, and competition</li>
+                        <li><strong>Planning:</strong> Creating outlines and defining key messages</li>
+                        <li><strong>Writing:</strong> Crafting engaging, valuable content</li>
+                        <li><strong>Editing:</strong> Refining for clarity, flow, and impact</li>
+                        <li><strong>Optimization:</strong> Ensuring SEO and performance goals are met</li>
+                    </ol>
+                </div>
+
+                <h3>Essential Skills for Content Writers</h3>
+                <p>Successful content writers master a diverse set of skills that combine technical knowledge with creative ability:</p>
+                <ul>
+                    <li>Research and fact-checking capabilities</li>
+                    <li>SEO knowledge and keyword optimization</li>
+                    <li>Understanding of different content formats and channels</li>
+                    <li>Analytics and performance measurement</li>
+                    <li>Adaptability to different brand voices and audiences</li>
+                </ul>
+
+                <h3>Measuring Content Success</h3>
+                <p>Great content writing goes beyond creativity—it delivers measurable results. Key metrics include engagement rates, conversion rates, search rankings, and social shares. By tracking these metrics, content writers can continuously improve their craft and demonstrate value to clients and employers.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Yash Raikwar. All rights reserved. | Content Writer & Certified Photographer</p>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animatable elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.section-title, .about-text, .about-image, .service-card, .flow-step, .blog-card, .contact-info, .contact-form');
+            elements.forEach(el => observer.observe(el));
+        });
+
+        // Blog navigation
+        function showBlogDetail(blogId) {
+            document.getElementById('main-content').style.display = 'none';
+            document.querySelector('.back-button').style.display = 'block';
+            
+            // Hide all blog details
+            document.querySelectorAll('.blog-detail').forEach(detail => {
+                detail.classList.remove('active');
+            });
+            
+            // Show selected blog detail
+            const blogDetail = document.getElementById(blogId);
+            blogDetail.classList.add('active');
+            
+            // Trigger animations
+            setTimeout(() => {
+                blogDetail.querySelector('.blog-header').classList.add('animate');
+                blogDetail.querySelector('.blog-detail-content').classList.add('animate');
+            }, 100);
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        function showHome() {
+            document.getElementById('main-content').style.display = 'block';
+            document.querySelector('.back-button').style.display = 'none';
+            
+            // Hide all blog details
+            document.querySelectorAll('.blog-detail').forEach(detail => {
+                detail.classList.remove('active');
+                detail.querySelector('.blog-header').classList.remove('animate');
+                detail.querySelector('.blog-detail-content').classList.remove('animate');
+            });
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Contact form handling with animations
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const btn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const formData = new FormData(this);
+            
+            // Show loading state
+            btn.classList.add('loading');
+            btn.disabled = true;
+            btnText.innerHTML = '<div class="spinner"></div> Sending...';
+            
+            // Simulate email sending (replace with actual email service)
+            try {
+                // Using EmailJS or similar service would go here
+                // For demo purposes, we'll simulate the process
+                await simulateEmailSend(formData);
+                
+                // Show success state
+                btn.classList.remove('loading');
+                btn.classList.add('success');
+                btnText.innerHTML = `
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="m14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                    Message Sent!
+                `;
+                
+                // Reset form after success
+                setTimeout(() => {
+                    this.reset();
+                    btn.classList.remove('success');
+                    btn.disabled = false;
+                    btnText.textContent = 'Send Message';
+                }, 3000);
+                
+            } catch (error) {
+                // Handle error
+                btn.classList.remove('loading');
+                btn.disabled = false;
+                btnText.textContent = 'Try Again';
+                alert('Sorry, there was an error sending your message. Please try again or contact me directly at yashraikwar132005@gmail.com');
+            }
+        });
+
+        // Simulate email sending function
+        async function simulateEmailSend(formData) {
+            return new Promise((resolve, reject) => {
+                // Simulate API call delay
+                setTimeout(() => {
+                    // In a real implementation, you would use EmailJS, Formspree, or similar service
+                    // For now, we'll just log the form data and resolve
+                    console.log('Form Data:', Object.fromEntries(formData));
+                    
+                    // Create mailto link as fallback
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const subject = formData.get('subject');
+                    const message = formData.get('message');
+                    
+                    const mailtoLink = `mailto:yashraikwar132005@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+                    
+                    // Open mailto link
+                    window.open(mailtoLink);
+                    
+                    resolve();
+                }, 2000);
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>="blog-excerpt">Exploring how machine learning algorithms are revolutionizing content creation, from automated writing to personalized user experiences. Discover the tools and techniques shaping the industry.</p>
+                            <div class="blog-meta">Published 2 weeks ago | 5 min read</div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="showBlogDetail('ai-marketing')">
+                        <div class="blog-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Artificial Intelligence: Transforming Digital Marketing</h3>
+                            <p class="blog-excerpt">How AI is reshaping digital marketing strategies, from predictive analytics to chatbots. Learn about the latest AI tools that are giving businesses a competitive edge in 2025.</p>
+                            <div class="blog-meta">Published 1 week ago | 7 min read</div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="showBlogDetail('deep-learning')">
+                        <div class="blog-image">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Deep Learning Applications in Modern Business</h3>
+                            <p class
